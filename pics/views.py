@@ -1,9 +1,11 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 import datetime as dt
 
 
 def welcome(request):
-    return HttpResponse('Galla.me pics')
+    return render(request,'welcome.html')
+
+
 
 
 
