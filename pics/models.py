@@ -34,16 +34,16 @@ class Image(models.Model):
         london_images=cls.objects.filter(location__location_name='London')
         return london_images
     @classmethod
-    def China(cls):
-        china_images=cls.objects.filter(location__location_name='China')
+    def Amsterdam(cls):
+        amsterdam_images=cls.objects.filter(location__location_name='Amsterdam')
         return china_images
     @classmethod
-    def Malawi(cls):
-        malawi_images=cls.objects.filter(location__location_name='Malawi')
+    def SouthAfrica(cls):
+        southafrica_images=cls.objects.filter(location__location_name='SouthAfrica')
         return malawi_images
     @classmethod
-    def Europe(cls):
-        europe_images=cls.objects.filter(location__location_name='Europe')
+    def Nairobi(cls):
+        nairobi_images=cls.objects.filter(location__location_name='Nairobi')
     def save_image(self):
         self.save()
     def delete_image(self):

@@ -1,0 +1,15 @@
+{%extends 'all-images/base.html'%}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+    <img src="{{images.image_path.url}}"  class="img-thumbnail" alt="">
+  </div>
+  <div class="col-md-4">
+    <h2 class="text-center">{{images.name}}</h2>
+    <p>{{images.image_description}}</p>
+    
+  </div>
+</div>
+
+
