@@ -5,7 +5,7 @@ import datetime as dt
 def welcome(request):
     return render(request,'welcome.html')
 
-def search_results(request):
+def search_categories(request):
 
     if 'category' in request.GET and request.GET["category"]:
         search_term = request.GET.get("category")

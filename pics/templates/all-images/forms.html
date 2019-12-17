@@ -1,0 +1,58 @@
+{%extends 'all-images/base.html'%}
+{% load bootstrap3 %}
+{% load static %}
+
+
+{% block styles %}
+{{ block.super }}
+{% bootstrap_css %}
+ <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/index.css'%}">
+{% endblock %}
+
+{% block content %}
+
+
+
+
+<div class="container">
+
+
+  <div class="row">
+
+
+{%for image in my_images %}
+
+
+
+
+  <div class="col-md-4 columns">
+   <div class="view view-first">
+
+    <img src="{{image.image_path.url}}"class="img-thumbnail" alt="Image" style="">
+  <div class="mask">
+   <h2 ><a href="{%url 'description' image.id%}" class="info">View Image</a></h2>
+  <p class="btn" data-clipboard-text="http://127.0.0.1:8000{{image.image_path.url}}">Copy to clipboard</p>
+
+</div>
+ </div>
+</div>
+
+
+
+  {% empty %}
+  <div class="row">
+    <h2 class="text-center">There are no new items</h2>
+
+</div>
+</div>
+</div>
+
+{% endfor %}
+
+
+
+
+
+{% endblock %}.3333
+[]
