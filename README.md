@@ -40,3 +40,14 @@ To run the application, in your terminal:
 tests on class files
 
       $ python3 manage.py test
+
+### Technologies Used
+This project was generated using
+
+Python version 3.8.0.
+Django
+Bootstrap.
+javascript.
+PSQL database.
+HTML,CSS
+Support and
