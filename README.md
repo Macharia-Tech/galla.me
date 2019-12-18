@@ -33,3 +33,10 @@ Installing Django and other Modules
 To run the application, in your terminal:
 
   python3 manage.py runserver
+
+
+
+### Testing the Application
+tests on class files
+
+      $ python3 manage.py test
