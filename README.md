@@ -15,3 +15,8 @@ pip
 virtualenv
 Requirements.txt
 
+### Clonning
+In your terminal
+  
+   $ git clone https://github.com/AudreyCherrie/galla.me.git
+   $ cd pics
