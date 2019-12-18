@@ -29,10 +29,11 @@ Creating the virtual environment
 
 Installing Django and other Modules
 
-  $  Requirements.txt
+    $ Requirements.txt
+
 To run the application, in your terminal:
 
-  python3 manage.py runserver
+    $ python3 manage.py runserver
 
 
 
@@ -50,4 +51,3 @@ Bootstrap.
 javascript.
 PSQL database.
 HTML,CSS
-Support and
