@@ -20,3 +20,9 @@ In your terminal
   
    $ git clone https://github.com/AudreyCherrie/galla.me.git
    $ cd pics
+
+### Running the Application
+Creating the virtual environment
+
+    $ python3 -m venv virtual
+    $ source virtual/bin/env
