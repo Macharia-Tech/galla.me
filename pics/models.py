@@ -22,8 +22,9 @@ class Image(models.Model):
     name=models.CharField(max_length=30)
     image_description=models.TextField()
     image_path=models.ImageField(upload_to='images/',blank=True)
-    category=models.ForeignKey(Category,null=True)
-    location=models.ForeignKey(Location,null=True)
+    category=models.ForeignKey(Category, on_delete = models.CASCADE)
+
+    location=models.ForeignKey(location,on_delete = models.CASCADE)
 
     @classmethod
     def search(cls,search_term):

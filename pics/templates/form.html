@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
-    
 
-      <!-- Adding a search form  -->
-      <div class="col-sm-4 col-md-4 navbar-right">
+<div class="container-fluid" style="background-image:url(../static/Pictures/backgroundimage1.jpg); height:500px;background-position:0% 25%;text-align:center;">
+<form class="navbar-form" role="search" action="{% url 'search_category' %}">
 
-        <form class="navbar-form" role="search" action="{% url 'search_results' %}">
+          <div class="container" style="padding:20px;">
+          <center>  <h1 style="color: black; font-family: 'Raleway', sans-serif;">Galla.me</h1>
+            <h3 style="color:black;font-family: 'Raleway', sans-serif; ">An app that allows you to view beautiful and free images <br>
+            Search for images based on categories</h2></center>
+          <br>
+          <div class="input-group" style="margin-left 400px;">
 
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search Category" name="category">
+           <input type="text"  class="form-control" placeholder="Search by category" name="category" >
             <div class="input-group-btn">
               <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
             </div>
@@ -23,6 +27,7 @@
 
         </form>
       </div>
-      <!-- search form end -->
+    </div>
+
 </body>
 </html>

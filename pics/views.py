@@ -2,9 +2,10 @@ from django.shortcuts import render
 from .models import Image,Category,location
 from django.http import Http404
 
-
 def welcome(request):
-    return render(request,'welcome.html')
+    title='welcome to Galla.me'
+    my_images=Image.objects.all()
+    return render(request,'all-images/first.html',{"title":title,"my_images":my_images})
 
 def image(request,image_id):
     try:
