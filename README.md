@@ -10,10 +10,10 @@ An application that allows one to view images and may also copy links of the des
 
 ### SetUp/ Installation Requirements
 
-python3.6
-pip
-virtualenv
-Requirements.txt
+    1.python3.6
+    2.pip
+    3.virtualenv
+    4.Requirements.txt
 
 ### Clonning
 In your terminal
@@ -46,9 +46,9 @@ tests on class files
 ### Technologies Used
 This project was generated using
 
-Python version 3.8.0.
-Django
-Bootstrap.
-javascript.
-PSQL database.
-HTML,CSS
+    1.Python version 3.8.0.
+    2.Django
+    3.Bootstrap
+    4.javascript
+    5.PSQL database
+    6.HTML,CSS
