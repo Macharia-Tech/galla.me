@@ -18,8 +18,9 @@ Requirements.txt
 ### Clonning
 In your terminal
   
-   $ git clone https://github.com/AudreyCherrie/galla.me.git
-   $ cd pics
+    $ git clone https://github.com/AudreyCherrie/galla.me.git
+
+    $ cd pics
 
 ### Running the Application
 Creating the virtual environment
