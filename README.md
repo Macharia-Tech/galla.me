@@ -26,3 +26,10 @@ Creating the virtual environment
 
     $ python3 -m venv virtual
     $ source virtual/bin/env
+
+Installing Django and other Modules
+
+  $  Requirements.txt
+To run the application, in your terminal:
+
+  python3 manage.py runserver
