@@ -1,25 +1,27 @@
-{% load bootstrap4 %}
+{% load bootstrap3 %}
 {% load static %}
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-
   {% if title %}
   <title>Art Galla- {{title}}</title>
   {% else %}
     <title> Art Galla </title>
   {% endif %}
-
   {% block styles %}
    {% bootstrap_css %}
-    <link rel = "stylesheet" href="{% static 'css/basepics.css'%}">
+    <link rel = "stylesheet" href="{% static 'basepics.css'%}">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   {% endblock %}
 </head>
 <body>
     {% include "navbar.html"%}
     {% include "form.html"%}
+
+    {%block content%}
+
+    {%endblock%}
 
     
     {% block scripts %}
@@ -28,21 +30,8 @@
 
     <!-- <script src ="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js "></script> -->
     {% bootstrap_javascript %}
-
-    <script src="{% static 'copy.js/clipboard.min.js'%}"></script>
-    <script>
-    var clipboard = new ClipboardJS('.btn');
-clipboard.on('success', function(e) {
-   alert('copied')
-   console.info('Action:', e.action);
-   console.info('Text:', e.text);
-   console.info('Trigger:', e.trigger);
-   e.clearSelection();
-});
-    </script>
-
     {% endblock %}
-</body> -->
+</body> 
 
 
 

@@ -27,6 +27,11 @@ class Image(models.Model):
     location=models.ForeignKey(location,on_delete = models.CASCADE)
 
     @classmethod
+    def get_image(cls):
+        images=cls.objects.all()
+        return images
+
+    @classmethod
     def search(cls,search_term):
         categories=cls.objects.filter(category__name__icontains=search_term)
         return categories
@@ -37,11 +42,11 @@ class Image(models.Model):
     @classmethod
     def Amsterdam(cls):
         amsterdam_images=cls.objects.filter(location__location_name='Amsterdam')
-        return china_images
+        return amsterdam_images
     @classmethod
     def SouthAfrica(cls):
         southafrica_images=cls.objects.filter(location__location_name='SouthAfrica')
-        return malawi_images
+        return southafrica_images
     @classmethod
     def Nairobi(cls):
         nairobi_images=cls.objects.filter(location__location_name='Nairobi')

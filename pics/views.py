@@ -4,8 +4,8 @@ from django.http import Http404
 
 def welcome(request):
     title='welcome to Galla.me'
-    my_images=Image.objects.all()
-    return render(request,'all-images/first.html',{"title":title,"my_images":my_images})
+    images=Image.London()
+    return render(request,'all-images/first.html',{"title":title,"images":images})
 
 def image(request,image_id):
     try:
