@@ -10,15 +10,16 @@
 {% endblock %}
 
 {% block content %}
+
 <div class="container">
-  <div class="row">
-    {%for image in images %}
-
-    <div class="col-md-4 columns">
-      <div class="view view-first">
-
-        <img src="{{loc.image_path.url}}" class="img-thumbnail" alt="Image">
+  
+  <div class="view view-first">
+    <div class="row">
+      {%for image in images %}
+          <div class =" col-md-4">
+        <img src="{{image.image_path.url}}" class="img-thumbnail" alt="Image" style= "width: 250px ;height: 400px">
         <p></p>
+    
         <div class="mask">
       
             <h2><a href="{%url 'description' image.id%}" class="info">View Image</a></h2>
@@ -27,7 +28,7 @@
        
           <div style="padding-top:10px;">
             <input class="form-control input-lg" type="text" style="width:60%; margin-left: 20%;"
-                value="http://127.0.0.1:800" id="{{image.id}}-url">
+                value="http://127.0.0.1:8000/{{image.image_path}}" id="{{image.id}}-url">
             <div style="padding-top:10px;">
                 <button class="btn btn-primary" onclick="imageurl('{{image.id}}-url');">Copy Link</button><br>
             </div>
@@ -41,15 +42,16 @@
             }
         </script>
         </div>
-      </div>
+      </divclass="row">
     </div>
     {% empty %}
     <div class="row">
       <h2 class="text-center">There are no new items</h2>
 
     </div>
-    {% endfor %}
   </div>
+  {% endfor %}
+</div>
 </div>
 
 
