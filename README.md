@@ -1,5 +1,5 @@
 ## **GALLA**
-![pic](/home/macharia/Pictures/Screenshot from 2019-12-19 15-40-37.png)
+![pic](Screenshot.png)
 ### Author:
  Audrey Macharia
 
