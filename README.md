@@ -1,4 +1,4 @@
-![pic](./static/leo.png)
+![pic](./static/leo.png)        
 ### Author:
  Audrey Macharia
 
