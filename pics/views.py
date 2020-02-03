@@ -4,10 +4,10 @@ from django.http import Http404
 
 # Create your views here.
 def start(request):
-    title='welcome to Gallery'
+    title='welcome to Galla.me'
     images=Image.London()
     return render(request,'all-images/first.html',{"title":title,"images":images})
-    
+
 def image(request,image_id):
     try:
         images=Image.objects.get(id=image_id)

@@ -1,5 +1,5 @@
 {%extends 'all-images/base.html'%}
-{% load bootstrap3 %}
+{% load bootstrap4 %}
 {% load static %}
 
 {% block styles %}
@@ -14,10 +14,11 @@
 <div class="container">
   
   <div class="view view-first">
-    <div class="row">
+    <div class="row no-gutters">
 
       {%for image in images %}
-          <div class =" col-md-4 columns">
+      <div class="col-md-3" style="background-color:whitesmoke;">
+        <div class="card" style="width: 15rem;">
 
         <img src="{{image.image_path.url}}" class="img-thumbnail" alt="Image" style= "width: 250px ;height: 400px">
         <p></p>
@@ -26,11 +27,11 @@
       
             <h2><a href="{%url 'description' image.id%}" class="info">View Image</a></h2>
             <p class="btn" data-clipboard-text="http://127.0.0.1:8000{{image.image_path.url}}">Copy to clipboard</p>
-
+        
 </div>
  </div>
 </div>
-
+  
         
           
 <!--        
@@ -56,6 +57,7 @@
     <div class="row">
       <h2 class="text-center">There are no new items</h2>
 
+    </div>
     </div>
   </div>
   {% endfor %}
