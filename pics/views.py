@@ -10,7 +10,7 @@ def welcome(request):
 def image(request,image_id):
     try:
         images=Image.objects.get(id=image_id)
-    except DoesNotExsist:
+    except DoesNotExsist:   
         raise Http404()
     return render(request,"all-images/image.html",{"images":images})
 

@@ -41,15 +41,17 @@ class Image(models.Model):
     def London(cls):
         london_images=cls.objects.filter(location__location_name='London')
         return london_images
-        
+
     @classmethod
     def Amsterdam(cls):
         amsterdam_images=cls.objects.filter(location__location_name='Amsterdam')
         return amsterdam_images
+
     @classmethod
     def SouthAfrica(cls):
         southafrica_images=cls.objects.filter(location__location_name='SouthAfrica')
         return southafrica_images
+        
     @classmethod
     def Nairobi(cls):
         nairobi_images=cls.objects.filter(location__location_name='Nairobi')
