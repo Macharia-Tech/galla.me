@@ -18,6 +18,7 @@ class Category(models.Model):
     def delete_category(self):
         self.delete()
 
+
 class Image(models.Model):
     name=models.CharField(max_length=30)
     image_description=models.TextField()
@@ -35,10 +36,12 @@ class Image(models.Model):
     def search(cls,search_term):
         categories=cls.objects.filter(category__name__icontains=search_term)
         return categories
+
     @classmethod
     def London(cls):
         london_images=cls.objects.filter(location__location_name='London')
         return london_images
+        
     @classmethod
     def Amsterdam(cls):
         amsterdam_images=cls.objects.filter(location__location_name='Amsterdam')
