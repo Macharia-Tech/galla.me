@@ -13,17 +13,14 @@
        <a class="navbar-brand" href="{% url 'Start' %}">Galla.me</a>
   
      </div>
-     <div class="collapse navbar-collapse">
-     <h4 style="color: blueviolet;"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-       Location
-       <span class="caret">Location</span>
-     </h4>
-     <ul class="dropdown-menu">
-       <li><a href="{%url 'location'%}">London</a></li>
-       <li><a href="{%url 'location1'%}">Amsterdam</a></li>
-       <li><a href="{%url 'location2'%}">SouthAfrica</a></li>
-       <li><a href="{%url 'location3'%}">Australia</a></li>
-       <li><a href="{%url 'location3'%}">Afghanistan</a></li>
+     <div class="dropdown">
+      <button class="dropbtn">Location</button>
+       <div class="dropdown-content">
+       <a href="{%url 'location'%}">London</a>
+       <a href="{%url 'location1'%}">Amsterdam</a>
+       <a href="{%url 'location2'%}">SouthAfrica</a>
+       <a href="{%url 'location3'%}">Australia</a>
+       <a href="{%url 'location3'%}">Afghanistan</a>
       
   
      </ul>
@@ -37,6 +34,42 @@
   
   
   </nav>
+  <style>
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+    </style>
 
 </body>
 </html>
