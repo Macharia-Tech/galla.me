@@ -15,17 +15,25 @@
   
   <div class="view view-first">
     <div class="row">
+
       {%for image in images %}
-          <div class =" col-md-4">
+          <div class =" col-md-4 columns">
+
         <img src="{{image.image_path.url}}" class="img-thumbnail" alt="Image" style= "width: 250px ;height: 400px">
         <p></p>
     
         <div class="mask">
       
             <h2><a href="{%url 'description' image.id%}" class="info">View Image</a></h2>
+            <p class="btn" data-clipboard-text="http://127.0.0.1:8000{{image.image_path.url}}">Copy to clipboard</p>
+
+</div>
+ </div>
+</div>
+
         
           
-       
+<!--        
           <div style="padding-top:10px;">
             <input class="form-control input-lg" type="text" style="width:60%; margin-left: 20%;"
                 value="https://gallax.herokuapp.com/{{image.image_path}}" id="{{image.id}}-url">
@@ -43,7 +51,7 @@
         </script>
         </div>
       </divclass="row">
-    </div>
+    </div> -->
     {% empty %}
     <div class="row">
       <h2 class="text-center">There are no new items</h2>
