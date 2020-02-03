@@ -14,6 +14,7 @@ def image(request,image_id):
     except DoesNotExsist:
         raise Http404()
     return render(request,"all-images/image.html",{"images":images})
+
 def search_category(request):
     search_term=request.GET.get("category")
     searched_categories=Image.search(search_term)
@@ -22,12 +23,15 @@ def search_category(request):
 def london(request):
     location=Image.London()
     return render (request,'all-images/location.html',{"location":location})
+
 def amsterdam(request):
     location=Image.Amsterdam()
     return render (request,'all-images/location1.html',{"location":location})
+
 def southafrica(request):
     location=Image.SouthAfrica()
     return render (request,'all-images/location2.html',{"location":location})
+    
 def nairobi(request):
     location=Image.Nairobi()
     return render (request,'all-images/location3.html',{"location":location})
