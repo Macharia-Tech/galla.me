@@ -85,8 +85,19 @@ clipboard.on('success', function(e) {
     color: white;
     transform: rotateY(180deg);
   }
+
+  body {
+    background-color: pink;
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
   </style>
     {% endblock %}
+
 
 </body>
 </html>
